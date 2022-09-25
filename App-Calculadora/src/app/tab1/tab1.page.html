@@ -1,0 +1,69 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-buttons slot="primary">
+      <ion-button (click)="limpar()">
+        <ion-icon  slot="icon-only" name="Trash"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
+      Calculadora
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content [fullscreen]="true">
+<ion-card>
+  <ion-item>
+    <ion-input clearInput placeholder="Digite o Primeiro valor" [(ngModel)]="valor1"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-input clearInput placeholder="Digite o Segundo valor" [(ngModel)]="valor2"></ion-input>
+  </ion-item>
+</ion-card>
+
+
+<ion-card>
+  <ion-row>
+    <ion-col siza="3">
+      <ion-button (click)="soma()" shape="round" size="small" fill="outline">+</ion-button>
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button (click)="sub()" shape="round" size="small" fill="outline">-</ion-button>
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button (click)="div()" shape="round" size="small" fill="outline">/</ion-button>
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button (click)="mult()" shape="round" size="small" fill="outline">*</ion-button>
+    </ion-col>
+  </ion-row>
+
+
+  <ion-row>
+    <ion-col  size="6">
+      <ion-button (click)="maior()"  expand="block">Maior</ion-button>
+    </ion-col>
+    <ion-col size="6">
+      <ion-button (click)="menor()"  expand="block">Menor</ion-button>
+    </ion-col>
+  </ion-row>
+</ion-card>
+
+
+
+<ion-card>
+  <ion-item>
+  <ion-label>
+    Resultado: {{conta}}
+  </ion-label>
+
+  </ion-item>
+
+  <ion-item>
+  <ion-label>
+    Operação: {{opera}}
+  </ion-label>
+  </ion-item>
+</ion-card>
+</ion-content>
