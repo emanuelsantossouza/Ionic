@@ -13,9 +13,8 @@ export class Tab1Page {
   opera='';
 
   constructor(private alertController: AlertController) {}
-
+  
   async soma() {
-
 
     this.conta = (parseFloat(this.valor1)+parseFloat(this.valor2)).toString();
     // eslint-disable-next-line @typescript-eslint/quotes
