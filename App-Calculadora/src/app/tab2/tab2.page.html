@@ -1,17 +1,128 @@
 <ion-header [translucent]="true">
-  <ion-toolbar>
+  <ion-toolbar color="dark">
     <ion-title>
-      Tab 2
+      Calculadora
     </ion-title>
   </ion-toolbar>
 </ion-header>
+ 
+<ion-content [fullscreen]="true"  color="dark">
+ <ion-item color="dark">
+   <ion-label>Operação:</ion-label>
+   <ion-input type="number"></ion-input>
+ </ion-item>
 
-<ion-content [fullscreen]="true">
-  <ion-header collapse="condense">
-    <ion-toolbar>
-      <ion-title size="large">Tab 2</ion-title>
-    </ion-toolbar>
-  </ion-header>
+ <ion-item color="dark">
+  <ion-label>Resultado:{{Resultado}}</ion-label>
+</ion-item>
 
-  <app-explore-container name="Tab 2 page"></app-explore-container>
+
+
+
+<ion-item>
+  <ion-button>
+    MC
+  </ion-button>
+  <ion-button>
+    MR
+  </ion-button>
+  <ion-button>
+    M+
+  </ion-button>
+  <ion-button>
+    M-
+  </ion-button>
+  <ion-button>
+    MS
+  </ion-button>
+</ion-item>
+
+
+<ion-card color="dark">
+  
+  <ion-row>
+    
+    <ion-col siza="3">
+      <ion-button  fill="outline" size="small"><ion-icon name="backspace-outline"></ion-icon></ion-button>
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button size="small">CE</ion-button>
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button size="small">C</ion-button>
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button size="small" name="backspace-outline">%
+      
+      </ion-button>
+
+    </ion-col>
+    <ion-col siza="3">
+      <ion-button size="small" fill="outline">¹/x</ion-button>
+    </ion-col>
+
+    <ion-col>
+      <ion-button size="small" fill="outline">X²</ion-button>
+    </ion-col> 
+
+    <ion-col siza="3">
+      <ion-button (click)="mult()"  size="small" fill="outline">2√x</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button fill="outline">÷</ion-button>
+    </ion-col> 
+    
+    <ion-col siza="3">
+      <ion-button>7</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>8</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>9</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button fill="outline" >X</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>4</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>5
+      </ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>6</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button fill="outline">-</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>1</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>3</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>3</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button fill="outline">+</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>+/_</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>0</ion-button>
+    </ion-col> 
+    <ion-col siza="3">
+      <ion-button>,</ion-button>
+    </ion-col> 
+   
+    <ion-col>
+      <ion-button size="small" fill="outline">=</ion-button>
+    </ion-col> 
+  </ion-row>
+</ion-card>
+
 </ion-content>
