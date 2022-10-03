@@ -1,0 +1,93 @@
+<ion-header [translucent]="true">
+  <ion-toolbar>
+    <ion-title>Drinks</ion-title>
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedStar()">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content color="dark" [fullscreen]="true">
+
+  <ion-grid>
+    <ion-row>
+
+      <ion-col  size="6">
+        <ion-card >
+          <img src="https://img.freepik.com/fotos-gratis/vista-frontal-diferentes-bebidas-coloridas-dentro-de-garrafas_140725-14407.jpg?w=2000" alt="">
+
+          <ion-item color="">
+            <ion-label>Mata boi</ion-label>
+          </ion-item>
+
+          <ion-item color="">
+            <ion-label>R$ 4,00</ion-label> <ion-badge slot="start" ></ion-badge>
+            <ion-button slot="end">
+              <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-item>
+
+        </ion-card> 
+      </ion-col>
+
+      <!--Final item 1 -->
+      <ion-col  size="6">
+        <ion-card >
+          <img src="https://s2.glbimg.com/yjcPVlzjDbjjR7-IchbdJFLIbao=/0x0:1254x836/984x0/smart/filters:strip_icc()/i.s3.glbimg.com/v1/AUTH_bc8228b6673f488aa253bbcb03c80ec5/internal_photos/bs/2022/3/3/92w4EYREyRINApxl77eQ/suco-frutas.jpg" alt="">
+
+          <ion-item color="">
+            <ion-label>Sucos naturais</ion-label>
+          </ion-item>
+
+          <ion-item color="">
+            <ion-label>R$ 4,00</ion-label>
+            <ion-button slot="end">
+                <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-item>
+
+        </ion-card> 
+      </ion-col>
+
+
+      <ion-col  size="6">
+        <ion-card >
+          <img src="https://alavoura.com.br/wp-content/uploads/2020/01/sucos-m-e1580250080572.jpg" alt="">
+
+          <ion-item color="">
+            <ion-label>Sucos naturais</ion-label>
+          </ion-item>
+
+          <ion-item color="">
+            <ion-label>R$ 4,00</ion-label>
+            <ion-button slot="end">
+                <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-item>
+
+        </ion-card> 
+      </ion-col>
+
+      <ion-col  size="6">
+        <ion-card>
+          <img src="http://mixologynews.com.br/wp-content/uploads/2009/11/Refrigerante-2L.jpg" alt="">
+
+          <ion-item color="">
+            <ion-label>Sucos naturais</ion-label>
+          </ion-item>
+
+          <ion-item color="">
+            <ion-label>R$ 4,00</ion-label>
+            <ion-button slot="end">
+                <ion-icon slot="icon-only" name="cart"></ion-icon>
+            </ion-button>
+          </ion-item>
+
+        </ion-card> 
+      </ion-col>
+    </ion-row>
+  </ion-grid>    
+
+</ion-content>
