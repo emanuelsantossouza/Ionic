@@ -1,9 +1,11 @@
 <ion-header [translucent]="true">
   <ion-toolbar color="dark">
-    <ion-button slot="end">
-      <ion-icon slot="end" name="cart-outline" slot="icon-only"></ion-icon>
-    </ion-button>
-    <ion-title slot="start">
+    <ion-buttons slot="primary">
+      <ion-button (click)="clickedStar()">
+        <ion-icon slot="icon-only" name="person-outline"></ion-icon>
+      </ion-button>
+    </ion-buttons>
+    <ion-title>
       Cardápio
     </ion-title>
   </ion-toolbar>
