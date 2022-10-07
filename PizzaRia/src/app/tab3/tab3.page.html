@@ -1,16 +1,23 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Tab 3
+      Pedidos
     </ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content [fullscreen]="true">
   <ion-item>
-    <ion-label position="floating">Nome</ion-label>
-    <ion-input [(ngModel)] = 'nome'></ion-input>
+    <ion-thumbnail slot="start">
+      <img alt="Silhouette of mountains" src="https://t4.ftcdn.net/jpg/02/96/96/71/360_F_296967135_DAjY06XgRvqzYr3WYzHvmQp4C66QxM00.jpg" />
+    </ion-thumbnail>
+    <ion-label>Calabresa</ion-label>
+    <ion-badge slot="end">R$ 22</ion-badge>
   </ion-item>
-  <ion-button (click)="presentAlert()">Click Here!!</ion-button>
+
+  <ion-item>
+      <ion-button  (click)="comprar()">Pedir</ion-button>
+  </ion-item>
+
 
 </ion-content>

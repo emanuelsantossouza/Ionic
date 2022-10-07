@@ -9,15 +9,13 @@ import { AlertController } from '@ionic/angular';
 export class Tab3Page {
 
   constructor(private alertController: AlertController) { }
-  nome = ''
-  email = ''
-  telefone = ''
 
-  async presentAlert() {
+
+  async comprar() {
     const alert = await this.alertController.create({
-      header: 'Alert',
-      subHeader: 'Important message',
-      message: `<p>Seu nome é ${this.nome}</p>`,
+      header: 'Pedido Realizado.',
+      subHeader: 'Obrigador por utilizar os nosso serviços.',
+      message: `<p>As suas pizzas estara prontas entre 30 a 50 minutos.</p>`,
       buttons: ['OK'],
     });
 
