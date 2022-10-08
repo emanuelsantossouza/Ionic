@@ -9,7 +9,7 @@
 <ion-content [fullscreen]="true"  color="dark">
  <ion-item color="dark">
    <ion-label>Operação:</ion-label>
-   <ion-input type="number"></ion-input>
+   <ion-input [(ngModel)]="Operacao" type="number"></ion-input>
  </ion-item>
 
  <ion-item color="dark">
@@ -73,7 +73,7 @@
     </ion-col> 
     
     <ion-col siza="3">
-      <ion-button>7</ion-button>
+      <ion-button (click)="">7</ion-button>
     </ion-col> 
     <ion-col siza="3">
       <ion-button>8</ion-button>
