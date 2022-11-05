@@ -8,40 +8,43 @@
 
 
   <ion-card>
-    <img alt="Silhouette of mountains" src="https://images.pexels.com/photos/4014875/pexels-photo-4014875.jpeg?cs=srgb&dl=pexels-anna-shvets-4014875.jpg&fm=jpg&_gl=1*mcg6gw*_ga*MTQyNjI0NDEyMS4xNjY3MjY0MDIw*_ga_8JE65Q40S6*MTY2NzI2NDAyMC4xLjEuMTY2NzI2NDEwMi4wLjAuMA.." width="150px" height="100%"/>
+    
   </ion-card>
 
 
   <ion-card>
-    <ion-list>
+    <form [formGroup]="formLogin">
       <ion-item>
-        <ion-label>Default input</ion-label>
-        <ion-input></ion-input>
+        <ion-label>E-mail:</ion-label>
+        <ion-input type="email" formControlName="email"></ion-input>
       </ion-item>
-    
-      <ion-item>
-        <ion-label>Input with placeholder</ion-label>
-        <ion-input placeholder="Enter company name"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Input with value</ion-label>
-        <ion-input value="121 S Pinckney St #300"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Readonly input</ion-label>
-        <ion-input value="Madison" [readonly]="true"></ion-input>
-      </ion-item>
-    
-      <ion-item>
-        <ion-label>Disabled input</ion-label>
-        <ion-input value="53703" [disabled]="true"></ion-input>
-      </ion-item>
-    </ion-list>
 
-    <ion-button expand="full">Full</ion-button>
+      <ion-item>
+        <ion-label>Senha:</ion-label>
+       <ion-input type="senha" formControlName="senha"></ion-input>
+      </ion-item>
+     
+    </form>
 
-    <ion-button expand="50%" size="large" fill="outline">Outline</ion-button> <ion-button size="large" slot="end" fill="outline">Outline</ion-button>
+
+
+    <ion-grid>
+      <ion-row>
+        <ion-col>
+          <ion-button expand="block">Block</ion-button>
+
+          <ion-button>
+            Right Icon
+            <ion-icon slot="end"></ion-icon>
+          </ion-button>
+
+          <ion-button>
+            <ion-icon slot="start"></ion-icon>
+            Left Icon
+          </ion-button>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+
   </ion-card>
 </ion-content>
